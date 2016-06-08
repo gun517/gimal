@@ -1,8 +1,9 @@
 
-<form action="" method="post">
+<form action="category_new" method="POST">
     {% csrf_token %}
     <table>
         {{ form.as_table }}
     </table>
+    <input type="text" name="title">
     <input type="submit" />
 </form>

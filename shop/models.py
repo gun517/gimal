@@ -27,5 +27,6 @@ class Comment(models.Model):
     post = models.ForeignKey(Post)
     user = models.ForeignKey(settings.AUTH_USER_MODEL)
     message = models.TextField()
+    photo = models.ImageField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
